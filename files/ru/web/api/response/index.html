@@ -113,7 +113,7 @@ fetch('flowers.jpg').then(function(response) {
 const doAjax = async () =&gt; {
     const response = await fetch('Ajax.php'); // Генерируем объект Response
     if (response.ok) {
-        const jVal = await response.json(); // Парсим тело ответа
+        const jVal = await response.json(); // Парсер тело ответа
         return Promise.resolve(jVal);
         }
     else
